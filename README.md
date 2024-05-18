@@ -2,8 +2,10 @@
 
 ### Start Application
 * Run the `CustomerapiApplication` Application
-* Default application runs on the port http://localhost:8080
-* When there are any port in use errors in the console override the port by setting the `server.port=808x` (where x is any number) in the `application.properties`
+* Default application runs on the port 8080 and url to access application http://localhost:8080
+* This app also embedded with the actuator, by default has health check endpoint `/health` 
+  * [Health](http://localhost:8080/actuator/health) 
+* When there are any port errors in the console, override the port by setting the `server.port=808x` (where x is any number) in the `application.properties`
 * Application comes with H2 in memory database.
   * [Quick Start on H2 Database](https://www.h2database.com/html/quickstart.html)
   * URL to access the [H2 DB Admin console](http://localhost:8080/h2-console)
